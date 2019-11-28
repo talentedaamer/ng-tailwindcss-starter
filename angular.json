@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularBloodbank": {
+    "angularTailwindcss": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularBloodbank",
+            "outputPath": "dist/angularTailwindcss",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angularBloodbank:build"
+            "browserTarget": "angularTailwindcss:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angularBloodbank:build:production"
+              "browserTarget": "angularTailwindcss:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularBloodbank:build"
+            "browserTarget": "angularTailwindcss:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angularBloodbank:serve"
+            "devServerTarget": "angularTailwindcss:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angularBloodbank:serve:production"
+              "devServerTarget": "angularTailwindcss:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angularBloodbank"
+  "defaultProject": "angularTailwindcss"
 }

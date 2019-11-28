@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angularBloodbank'`, () => {
+  it(`should have as title 'angularTailwindcss'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angularBloodbank');
+    expect(app.title).toEqual('angularTailwindcss');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angularBloodbank app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angularTailwindcss app is running!');
   });
 });
